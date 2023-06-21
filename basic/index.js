@@ -42,7 +42,7 @@ app.get('/students/filter/:college', async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: 'Failed to fetch students' });
   }
-});
+}) ;
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
